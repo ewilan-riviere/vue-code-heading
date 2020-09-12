@@ -3,7 +3,7 @@
     <p>
       This is a block of code.
     </p>
-    <code-info ext="js" path="path/to/index.js">
+    <code-info ext="blade" path="path/to/index.js">
       <code-example></code-example>
     </code-info>
     <p>

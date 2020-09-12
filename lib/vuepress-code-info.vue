@@ -5,7 +5,10 @@
     style="position: relative;"
   >
     <div v-if="notReachable" class="not-reachable"></div>
-    <div :class="['code-heading', colorClass]">
+    <div :class="['code-heading', colorClass]" class="code-default-bg-color">
+      <span v-if="!validExt">
+        {{ ext }}
+      </span>
       <span v-if="path">
         <span class="expand">·</span><i>{{ path }}</i>
       </span>
@@ -36,9 +39,40 @@ export default {
       default: false,
     },
   },
+  data() {
+    return {
+      validExt: false,
+    }
+  },
   computed: {
     colorClass() {
-      return this.ext ? `code-heading__${this.ext}` : 'code-heading__default'
+      let exts = [
+        'nginx',
+        'json',
+        'js',
+        'env',
+        'sh',
+        'apache',
+        'ini',
+        'output',
+        'mysql',
+        'psa',
+        'ps',
+        'php',
+        'blade',
+      ]
+      exts.forEach((ext) => {
+        if (ext === this.ext) {
+          this.validExt = true
+        }
+      })
+
+      let bgColor = this.validExt
+        ? this.ext
+          ? `code-heading__${this.ext}`
+          : 'code-heading__default'
+        : 'code-heading__default'
+      return bgColor
     },
   },
 }
