@@ -60,6 +60,7 @@ export default {
         'ps',
         'php',
         'blade',
+        'svg',
       ]
       exts.forEach((ext) => {
         if (ext === this.ext) {

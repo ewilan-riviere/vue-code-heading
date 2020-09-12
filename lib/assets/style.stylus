@@ -186,6 +186,14 @@
         }
     }
 
+    &__svg {
+        background-color: #000000;
+
+        &::before {
+            content: "SVG";
+        }
+    }
+
     &__default {
         background-color: #000000;
     }
