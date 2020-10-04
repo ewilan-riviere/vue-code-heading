@@ -1,11 +1,11 @@
 <template>
   <div>
-    <p>
-      This is a block of code.
-    </p>
-    <code-info ext="blade" path="path/to/index.js">
+    <div class="text-3xl font-bold">
+      <span class="font-vue">Vue</span> <span class="font-code">Code Info</span>
+    </div>
+    <vue-code-info ext="js" path="path/to/index.js">
       <code-example></code-example>
-    </code-info>
+    </vue-code-info>
     <p>
       It's sooo beautiful!
     </p>
@@ -13,10 +13,25 @@
 </template>
 
 <script>
-import codeExample from './code.md'
+import CodeExample from './code.md'
+
 export default {
   components: {
-    codeExample,
+    CodeExample,
+  },
+  data() {
+    return {
+      sourcecode: 'const s = new Date().toString()',
+    }
   },
 }
 </script>
+
+<style scoped>
+.font-vue {
+  font-family: 'Dosis', sans-serif;
+}
+.font-code {
+  font-family: 'Source Code Pro', monospace;
+}
+</style>

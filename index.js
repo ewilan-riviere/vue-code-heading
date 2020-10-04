@@ -1,4 +1,4 @@
-import VuepressCodeInfo from './lib/vuepress-code-info.vue'
+import VueCodeInfo from './lib/vue-code-info.vue'
 // import VueClipboard from 'vue-clipboard2'
 // import Toasted from 'vue-toasted'
 
@@ -10,7 +10,7 @@ export default {
     if (options) {
       // Vue.prototype.$option = options.option
     }
-    Vue.component('code-info', VuepressCodeInfo)
+    Vue.component('vue-code-info', VueCodeInfo)
 
     // to avoid rerror when build cause by vue-toast
     // if (!isServer) {

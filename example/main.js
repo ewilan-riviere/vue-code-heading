@@ -1,13 +1,16 @@
 import Vue from 'vue'
 import App from './App.vue'
-import VuepressCodeInfo from '../index'
+import VueCodeInfo from '../index'
+import VueHighlightJS from 'vue-highlightjs'
+import 'highlight.js/styles/night-owl.css'
 
 // for markdown style
 import './css/air.css'
 
 Vue.config.productionTip = false
 
-Vue.use(VuepressCodeInfo, {
+Vue.use(VueHighlightJS)
+Vue.use(VueCodeInfo, {
   option: 'option',
 })
 

@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'CodeHeading',
+  name: 'VueCodeInfo',
   props: {
     ext: {
       type: String,
@@ -61,6 +61,11 @@ export default {
         'php',
         'blade',
         'svg',
+        'vue',
+        'md',
+        'css',
+        'sass',
+        'scss',
       ]
       exts.forEach((ext) => {
         if (ext === this.ext) {
@@ -79,6 +84,6 @@ export default {
 }
 </script>
 
-<style lang="stylus">
-@import './assets/style.stylus'
+<style lang="scss">
+@import './assets/style.scss';
 </style>
