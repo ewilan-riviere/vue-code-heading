@@ -40,15 +40,13 @@ Use it in a `.vue` file
 <template>
   <div>
     <vue-code-info ext="js" path="index.js">
-      ```js
-      import VueCodeInfo from './lib/vue-code-info.vue'
+      <pre><code>import VueCodeInfo from './lib/vue-code-info.vue'
 
       export default {
         install(Vue) {
           Vue.component('vue-code-info', VueCodeInfo)
         },
-      }
-      ```
+      }</pre></code>
     </vue-code-info>
   </div>
 </template>
