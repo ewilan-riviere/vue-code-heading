@@ -1,21 +1,21 @@
 <template>
-  <span
+  <div
     :class="{ 'code-block-margin': hasMargin }"
     class="code-block"
     style="position: relative;"
   >
-    <span v-if="notReachable" class="not-reachable"></span>
-    <span :class="['code-heading', colorClass]" class="code-default-bg-color">
+    <div v-if="notReachable" class="not-reachable"></div>
+    <div :class="['code-heading', colorClass]" class="code-default-bg-color">
       <span v-if="!validExt">
         {{ ext }}
       </span>
       <span v-if="path">
         <span class="expand">·</span><i>{{ path }}</i>
       </span>
-    </span>
+    </div>
     <slot></slot>
-    <span class="copy-it forward-head"></span>
-  </span>
+    <div class="copy-it forward-head"></div>
+  </div>
 </template>
 
 <script>
