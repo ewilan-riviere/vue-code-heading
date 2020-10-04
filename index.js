@@ -1,7 +1,6 @@
 import VueCodeInfo from './lib/vue-code-info.vue'
 // import VueClipboard from 'vue-clipboard2'
 // import Toasted from 'vue-toasted'
-import './lib/assets/style.scss'
 
 export default {
   // eslint-disable-next-line no-unused-vars

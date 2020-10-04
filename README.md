@@ -8,7 +8,7 @@
 
 Display a header to code blocks in markdown for example with color of language and option for file path. It's for guides about plugins or frameworks.
 
-![vue-code-info](./lib/assets/vue-code-info-example.jpg)
+![vue-code-info](./lib/vue-code-info-example.jpg)
 
 ## **Documentation**
 
