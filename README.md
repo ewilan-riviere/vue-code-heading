@@ -54,7 +54,7 @@ Use it in a `.vue` file
 </template>
 ```
 
-Use in `.md` in [vuepress.vuejs.org](https://vuepress.vuejs.org/) or [content.nuxtjs.org](https://content.nuxtjs.org/)
+Use in `.md` in [vuepress](https://vuepress.vuejs.org/) or [nuxt / content](https://content.nuxtjs.org/)
 
 ```md
 ## Example of code
