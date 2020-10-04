@@ -1,7 +1,7 @@
-# **Vuepress Code Info**
+# **Vue Code Info**
 
 [![](https://img.shields.io/npm/v/vue-code-info.svg?style=flat-square&color=cb3837&logo=npm&logoColor=ffffff)](https://www.npmjs.com/package/vue-code-info)
-[![](https://img.shields.io/github/license/ewilan-riviere/vuepress-theme-useweb.svg?style=flat-square&color=f05032&logo=git&logoColor=ffffff)](https://github.com/ewilan-riviere/vue-code-info/blob/master/LICENSE)
+[![](https://img.shields.io/github/license/ewilan-riviere/vue-code-info.svg?style=flat-square&color=f05032&logo=git&logoColor=ffffff)](https://github.com/ewilan-riviere/vue-code-info/blob/master/LICENSE)
 
 [![node.js](https://img.shields.io/static/v1?label=Node.js&message=v11.15&color=339933&style=flat-square&logo=node.js&logoColor=ffffff)](https://nodejs.org/en/)
 [![vue.js](https://img.shields.io/static/v1?label=Vue.js&message=v2.6&color=4FC08D&style=flat-square&logo=vue.js&logoColor=ffffff)](https://vuejs.org/)
@@ -52,6 +52,26 @@ Use it in a `.vue` file
     </vue-code-info>
   </div>
 </template>
+```
+
+Use in `.md` in [vuepress.vuejs.org](https://vuepress.vuejs.org/) or [content.nuxtjs.org](https://content.nuxtjs.org/)
+
+```md
+## Example of code
+
+<vue-code-info ext="js" path="index.js">
+
+```js
+import VueCodeInfo from './lib/vue-code-info.vue'
+
+export default {
+  install(Vue) {
+    Vue.component('vue-code-info', VueCodeInfo)
+  },
+}
+```
+
+</vue-code-info>
 ```
 
 ### *API*
