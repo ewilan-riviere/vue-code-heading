@@ -21,26 +21,15 @@ export default {
     <p class="mt-5">
       It's sooo beautiful!
     </p>
-    <div>
-      <import-example></import-example>
-    </div>
   </div>
 </template>
 
 <script>
 import CodeExample from './code.md'
-import ImportExample from './import.md'
 
 export default {
   components: {
-    // eslint-disable-next-line vue/no-unused-components
     CodeExample,
-    ImportExample,
-  },
-  data() {
-    return {
-      sourcecode: 'const s = new Date().toString()',
-    }
   },
 }
 </script>
