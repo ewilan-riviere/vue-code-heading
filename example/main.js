@@ -4,6 +4,8 @@ import VueCodeInfo from '../index'
 import VueHighlightJS from 'vue-highlightjs'
 import 'highlight.js/styles/night-owl.css'
 
+import './css/tailwind.css'
+
 // for markdown style
 import './css/air.css'
 

@@ -1,21 +1,15 @@
 {
   "name": "vue-code-info",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "private": false,
   "author": {
     "name": "Ewilan 'EwieFairy' Rivière",
     "email": "ewilan@dotslashplay.it",
     "url": "https://github.com/ewilan-riviere"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ewilan-riviere/vue-code-info"
-  },
-  "license": "MIT",
-  "private": false,
-  "homepage": "https://ewilan-riviere.github.io/documentation/vue-code-info/",
   "scripts": {
-    "dev": "vue serve example/main.js",
-    "lint": "eslint --ext .js,.vue src"
+    "lint": "eslint --ext .js,.vue src",
+    "dev": "vue serve example/main.js"
   },
   "devDependencies": {
     "@vue/eslint-config-prettier": "^6.0.0",
@@ -28,8 +22,15 @@
     "sass": "^1.26.11",
     "sass-loader": "^10.0.2",
     "vue-cli-plugin-markdown": "~0.1.2",
+    "vue-cli-plugin-tailwind": "~1.5.0",
     "vue-highlightjs": "^1.3.3",
     "vue-markdown-loader": "^2.4.1",
     "webpack": "^4.44.1"
+  },
+  "homepage": "https://ewilan-riviere.github.io/documentation/vue-code-info/",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ewilan-riviere/vue-code-info"
   }
 }

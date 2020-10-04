@@ -1,9 +1,9 @@
 ```js
-import VueCodeInfoInfo from './lib/vue-code-info-info.vue'
+import VueCodeInfo from './lib/vue-code-info-info.vue'
 
 export default {
   install(Vue) {
-    Vue.component('code-info', VueCodeInfoInfo)
+    Vue.component('code-info', VueCodeInfo)
   },
 }
 ```
