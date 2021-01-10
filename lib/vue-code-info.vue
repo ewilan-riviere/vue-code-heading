@@ -66,6 +66,8 @@ export default {
         'css',
         'sass',
         'scss',
+        'good',
+        'bad'
       ]
       exts.forEach((ext) => {
         if (ext === this.ext) {
@@ -163,7 +165,7 @@ export default {
       'psa' #012456 'PowerShell (Admin)', 'json' #000000 'JSON',
       'svg' #000000 'SVG', 'vue' #4fc08d 'VUE', 'md' #000000 'MD',
       'css' #1572b6 'CSS', 'sass' #cc6699 'SASS', 'scss' #cc6699 'SCSS',
-      'default' #000000 '';
+      'default' #000000 '', 'good' #00ff00 'GOOD', 'bad' #ff0000 'BAD';
 
     @each $name, $color, $content, $textColor in $techs {
       &__#{$name} {
